@@ -6,4 +6,4 @@ jobs:
      steps:
        - checkout
        - run: 
-           command: python /tests/test.py
+           command: python /home/circleci/project/ACME-IIQ/tests/test.py
