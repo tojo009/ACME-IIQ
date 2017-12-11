@@ -6,4 +6,4 @@ jobs:
      steps:
        - checkout
        - run: 
-         command: python test.py
+           command: python test.py
