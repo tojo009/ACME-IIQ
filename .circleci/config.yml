@@ -6,4 +6,4 @@ jobs:
      steps:
        - checkout
        - run: 
-           command: python /.circleci/test.py
+           command: python /tests/test.py
