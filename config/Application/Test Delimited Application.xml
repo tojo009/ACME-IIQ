@@ -96,7 +96,7 @@
                               Logger  logg = Logger.getLogger("com.rules");
  
 
-logg.debug("Inside Somethings");
+logg.debug("Inside Somethingss");
                 // logg.debug(plan.toXml());
  boolean hidden = false;
                 boolean flagCheck=false;
