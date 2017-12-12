@@ -16,6 +16,7 @@ for file in modifiedFiles:
       data = data.encode('ascii')
       root = etree.XML(data)
       if not dtd.validate(root):
+        raise Exception("XML Validation failed")
         print(dtd.error_log.filter_from_errors())
   
 print(modifiedFiles)
