@@ -8,5 +8,5 @@ print(currentCommitSHA)
 
 command           = "git diff --name-only "+ currentCommitSHA +" origin/master~0"
 filesCheckResult  = check_output(command,shell=True)
-modifiedFiles     = filesCheckResult.decode(encoding='UTF-8').split("\n")
+modifiedFiles     = filesCheckResult.decode(encoding='UTF-8').split("\n").remove('')
 print(modifiedFiles)
