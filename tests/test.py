@@ -12,7 +12,7 @@ for file in modifiedFiles:
    if file.endswith(".xml"):
       print("Validating -" + file)
       with open(file, 'r') as myfile:
-      data=myfile.read().replace('\n', '')
+       data=myfile.read().replace('\n', '')
       root = etree.XML(data)
       print(dtd.validate(root))
   
