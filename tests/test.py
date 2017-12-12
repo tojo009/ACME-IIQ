@@ -1,7 +1,7 @@
 from subprocess import check_output
 
 
-currentCommitSHA = check_output("git rev-parse HEAD",shell=True)
+currentCommitSHA = check_output("git rev-parse HEAD",shell=True).strip('\n')
 #masterSHA        = check_output("git rev-parse orgin/master",shell=True)
 print(currentCommitSHA)
 #print(masterSHA)
