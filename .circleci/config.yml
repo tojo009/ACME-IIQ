@@ -6,4 +6,8 @@ jobs:
      steps:
        - checkout
        - run: 
+           name: Install lxml
+           command: pip install lxml==3.6.0
+       - run:
+           name: Run test script
            command: python /home/circleci/project/tests/test.py
