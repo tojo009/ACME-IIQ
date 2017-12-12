@@ -13,7 +13,7 @@ for file in modifiedFiles:
       print("Validating -" + file)
       with open(file, 'r') as myfile:
        data=myfile.read().replace('\n', '')
-      data = data.decode('utf-8').encode('ascii')
+      data = data.encode('ascii')
       print (data)
       root = etree.XML(data)
       print(dtd.validate(root))
