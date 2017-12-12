@@ -14,8 +14,8 @@ for file in modifiedFiles:
       with open(file, 'r') as myfile:
        data=myfile.read().replace('\n', '')
       data = data.encode('ascii')
-      print (data)
       root = etree.XML(data)
-      print(dtd.validate(root))
+      if(!dtd.validate(root)):
+        print(dtd.error_log.filter_from_errors())
   
 print(modifiedFiles)
