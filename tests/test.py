@@ -3,7 +3,7 @@ from lxml import etree
 
 currentCommitSHA  = check_output("git rev-parse HEAD",shell=True).decode(encoding='UTF-8').rstrip()
 print(currentCommitSHA)
-dtd = etree.DTD("sailpoint.dtd")
+dtd = etree.DTD("/home/circleci/project/tests/sailpoint.dtd")
 
 command           = "git diff --name-only "+ currentCommitSHA +" origin/master~0"
 filesCheckResult  = check_output(command,shell=True)
