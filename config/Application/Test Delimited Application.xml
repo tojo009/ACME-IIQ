@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Applications connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Test Delimited Application" profileClass="" type="DelimitedFile">
+<Application connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Test Delimited Application" profileClass="" type="DelimitedFile">
   <Attributes>
     <Map>
       <entry key="compositeDefinition"/>
@@ -148,4 +148,4 @@ logg.debug("Inside Somethings");
       <AttributeDefinition entitlement="true" managed="true" multi="true" name="role" type="string"/>
     </Schema>
   </Schemas>
-</Applications>
+</Application>
