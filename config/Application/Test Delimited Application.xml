@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
 <Application connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Test Delimited Application" profileClass="" type="DelimitedFile">
-  <Attributes
+  <Attributes>
     <Map>
       <entry key="compositeDefinition"/>
       <entry key="delimiter" value=","/>
       <entry key="file" value="C:\Users\hamehta\Desktop\testFile.csv"/>
       <entry key="filetransport" value="local"/>
       <entry key="filterEmptyRecords">
-        <value>
+        <value
           <Boolean>true</Boolean>
         </value>
       </entry>
